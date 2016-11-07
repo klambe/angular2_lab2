@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClickMeComponent implements OnInit {
 
+  clickMessage: string = "";
+
   constructor() { }
+
+  onClickMe() {
+this.clickMessage = "you clicked me";
+
+  }
 
   ngOnInit() {
   }
